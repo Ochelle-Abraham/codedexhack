@@ -1,272 +1,39 @@
-.body{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-
-.sidezz  a{
-    text-decoration: none;
-    background-color: #ffcc00;
-    color: black;
-    border: 3px solid #000;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 5px 5px 0px #333;
-    text-transform: uppercase;
-    font-family: "Pixelify Sans", sans-serif;
-  }
-  
-.sidezz li{
-    padding-bottom: 15px;
-    font-family: "Pixelify Sans", sans-serif;
-}
-
-.sidezz a:hover {
-    background-color: #ffff00;
-    box-shadow: 3px 3px 0px #333;
-    font-family: "Pixelify Sans", sans-serif;
-  }
-
-.entire{
-    display: flex;
-    justify-items: space-between;
-    
-}
-
-.sidezz{
-    margin-bottom: 50px;
-    background-image: url(./static/back2.webp);
-    background-size: 100%;
-    background-repeat: repeat;
-    position: fixed;
-    padding-top: 10%;
-    padding-bottom: 100%;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 10px;
-
-}
-.work{
-    margin-left: 100px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-
-}
-/* Reset styling */
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
     color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Container for the entire layout */
-.entire {
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-}
-
-
-
-/* Work section */
-.work {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    
-    background-size:cover ;
+    background-image: url(./static/back.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: mediumseagreen;
-    color: white;
- /*   */
-}
+  }
 
-/* About section styling */
-#about {
-    margin-bottom: 40px;
-}
-
-.home-image img {
-    border: 5px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.home-intro h6 {
-    font-size: 18px;
-    color: white;
-}
-
-.home-intro h1 {
-    font-size: 36px;
-    color: white;
-}
-
-.home-intro .colored-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.home-intro .colored-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .entire {
-        flex-direction: column;
-    }
-    .sidezz {
-        width: 100%;
-        height: auto;
-    }
-    .work {
-        width: 100%;
-    }
-}
-/* Skills Section Styling */
-#skills {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#skills h1 {
-    font-size: 32px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-/* Grid Layout for Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Space between grid items */
-    justify-items: center; /* Center content horizontally */
-    align-items: start; /* Align content vertically at the start */
-}
-
-.skill-category {
-    color: white;
-    margin-left: 20%;
-    padding: 15px;
-    width: 90%; /* Keeps the size responsive */
-    max-width: 400px;
-    text-align: right;
-}
-
-.skill-category h2 {
-    font-size: 24px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.skill-category p {
-    font-size: 16px;
-    color: white;
-    line-height: 1.5;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
+  
+.base{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    color: red;
+  }
+.centerr{
+    height: 200px;
+    width: 500px;
+    background-color: #10172a;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: rgba(16, 23, 42 48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: whitesmoke;
 }
 
 
-/* General Reset */
-body {
-    margin: 0;
-    font-family: "Comic Sans MS", "Arial", sans-serif; /* Classic 90s font */
-    color: #ffffff; /* Light text */
-    background-color: #0066cc; /* Vibrant blue background */
-}
-
-/* Repeating Background */
-.work {
-    background-image: linear-gradient(rgba(14, 13, 13, 0.356), rgba(0, 0, 0, 0.24)), url(./static/back4.webp); /* Existing background */
-    background-size: auto; /* Makes it tile repeatedly */
-    background-repeat: repeat;
-    color: white; /* Bright text */
-}
-
-/* Heading Styling */
-h1, h2 {
-    font-family: "Comic Sans MS", "Verdana", sans-serif;
-    text-shadow: 2px 2px 0px #000; /* Bold shadow for 90s pop effect */
-    color: #ffcc00; /* Yellow */
-}
-
-/* 90s Buttons */
-.skills a {
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 5px;
-    background-color:#ffcc00 ;/* Bright red */
-    border: 2px inset #ffffff; /* Beveled inset effect */
-    color: #ffff00; /* Yellow text */
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    box-shadow: 4px 4px 0px #000; /* Shadow for 3D effect */
-}
-
-a:hover {
-    background-color: #00ff00; /* Neon green on hover */
-    color: #000;
-    border: 2px outset #fff; /* Outset effect on hover */
-}
-
-/* Sidebar Styling */
-.sidezz ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidezz li {
-    
- 
-    padding: 10px;
-    margin: 5px 0;
-    text-align: center;
-}
-
-.sidezz li a {
-    background-color: #ffcc00; /* Yellow background */
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Skills Section in 90s Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    background-color: #008000; /* Green background for skills */
-    padding: 10px;
-    border: 2px solid #000;
-}
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-#letsgo{
+button {
     background-color: #ffcc00;
     color: black;
     border: 3px solid #000;
@@ -276,35 +43,12 @@ a:hover {
     font-family: "Courier New", monospace;
     box-shadow: 5px 5px 0px #333;
     text-transform: uppercase;
-    text-decoration: none;
-    
   }
   
-#letsgo:hover {
+button:hover {
     background-color: #ffff00;
     box-shadow: 3px 3px 0px #333;
   }
   
-.last{
-    margin-left: 20%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Default cursor for the entire site */
-* {
-    cursor: url("./static/cursor.png") 10 10, auto;
-}
-
-/* Change cursor when hovering over links and buttons */
-a:hover, button:hover {
-    cursor: url("./static/hover.png") 10 10, pointer;
-}
-
-/* Sidebar links hover state */
-.sidezz a:hover {
-    cursor: url("./static/hover.png") 10 10, pointer;
-}
-
-/* Other styles remain the same */
-body {
-    cursor: url('./static/cursor.png') 10 10, auto; /* Default custom cursor */
-}
