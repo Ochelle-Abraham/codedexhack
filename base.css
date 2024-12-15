@@ -289,22 +289,3 @@ a:hover {
     margin-left: 20%;
 }
 
-/* Default cursor for the entire site */
-* {
-    cursor: url("./static/cursor.png") 10 10, auto;
-}
-
-/* Change cursor when hovering over links and buttons */
-a:hover, button:hover {
-    cursor: url("./static/hover.png") 10 10, pointer;
-}
-
-/* Sidebar links hover state */
-.sidezz a:hover {
-    cursor: url("./static/hover.png") 10 10, pointer;
-}
-
-/* Other styles remain the same */
-body {
-    cursor: url('./static/cursor.png') 10 10, auto; /* Default custom cursor */
-}
